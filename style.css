@@ -1,0 +1,227 @@
+
+
+#titulo{ /* # para selleccionar un id */
+    color: crimson; 
+}
+
+
+
+
+
+p.texto { /* . para señleccionar una clase*/
+    color: blueviolet;
+}
+
+p.especial{
+    color:greenyellow;
+}
+
+div p {
+    color: aquamarine;
+}
+
+div h2 {
+    color: darkcyan;
+}
+
+div h2, div h3 {
+    color: burlywood;
+}
+
+/*{
+    font-size: 24px;
+    color: black; selector universal
+}*/
+ 
+/*
+ .color{
+     color: #ff0;
+ }
+  expresion hexagecimal*/ 
+  .color{
+      color : rgb(0, 255, 0)
+  }
+
+  /*.color{
+    border: 3px goldenrod solid;
+*/
+    /*
+    tipos de bordes
+
+    solid
+    dotted
+    duble
+    groove
+    ridge
+    inset
+    outset
+    none
+    hidden
+  }
+    */
+ .color {
+     border-style:solid ;
+     border-color: blue;
+     border-radius: 7px;
+     border-width: 1pt ;
+ }
+/* da el color al fondo del id seleccionado con opaciti loda claro trasparente
+ #fondo{
+     background-color: rgba(255, 0, 0);
+     opacity: 0.3 ;
+ }
+*/
+ 
+#fondo{
+    background-color: rgba(255, 0, 0);
+    /*opacity: 0,3;*/
+    height: 300px;
+   /* background-image: url("img/inoske.PNG");
+    background-size: 100px 100px;
+    background-repeat: repeat-y ;
+    background-position: center  top;*/
+
+    background: red url("img/inoske.PNG") repeat-y center bottom / 100px 100px;
+
+}
+/* repeat-y o-x cantidad de repreticione*/
+/* center top es el centro lef top, izquierda, rigth derecgha*/
+
+
+.margen {
+    background-color: chocolate;
+    margin: 15x 20px 25px 30px ;
+    padding: 30px 25px 20px 15px;
+    border: solid 1px;
+    height: 100px;
+    width: 50px;
+    overflow:scroll ;
+    outline: 1px solid red;
+
+}
+
+.text{
+    font-family: 'Nanum Gothic', sans-serif; /* cambiar funtes del sisitema*/
+    text-align: center ; /* para justificar los textos y centrarlos */
+    text-decoration: line-through ;/* para decorar textos*/
+    text-shadow: 3px 5px 5px gray;
+
+}
+
+a:link{  /* cuando el link nunca ha sido visitado*/
+    color:blueviolet;
+}
+
+a:visited{ /* link ha sido visitado*/
+    color: deepskyblue;
+}
+
+a:hover{/* cuando se slecciona el link*/
+    color:darkgoldenrod;
+}
+
+a:active{
+    color: red;
+}
+    
+
+ul{ 
+    background-color: yellow;
+    list-style-type: circle; /* none borrar los untos de la lista no ordenada*/
+  /*padding-left: 0;*/
+
+  /*list-style-position: inside;*/
+
+
+}
+
+table{  /* tabla*/
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td { /* columnas y filas*/
+    border: solid black;
+    padding: 5px;
+}
+
+th {/*columnas*/
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(even){       /* seleccionara elementos en particular*/
+    background-color: #eee ;
+    
+    
+    }
+
+tr:hover{
+    background-color: grey;
+    cursor:pointer; /* coloca cursor co una manito*/
+}
+
+span{
+    display: block;  
+
+    /*display: none;*/
+   /* visibility: hidden;*/ /*ociltar elementos*/
+   max-width: 300px; /* el elemnto se ajusta*/
+    background-color: red;
+}
+
+.inline{
+    display: inline;
+}
+
+#position {
+    /*position: relative;*/
+    /*position: fixed;*/
+    /*position: absolute;*/
+    position: sticky;
+
+    left: 20px;
+    top: 25px;
+}
+
+.left {
+    float: left;
+
+    width: 100px;
+    height: 100px;
+}
+
+.rigth {
+    float: right;
+    ;
+}
+
+.container{
+    height: 200px;
+}
+
+.column{
+   
+    margin: 0 ;
+    padding: 10px 0;
+    width: 33.3%;
+}
+
+.inline-block{
+    display: inline-block;
+    height: 50px;
+    background-color: green;
+}
+
+.center{
+
+    padding: 50px 0;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+
+}
+   
+    
